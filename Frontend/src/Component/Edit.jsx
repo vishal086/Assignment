@@ -40,7 +40,7 @@ function Home() {
   const handleUpdate = (e) => {
     e.preventDefault();
     axios
-      .put(`http://localhost:8000/edit/${id}`, user)
+      .put(`https://assignment-backend-vk8d.onrender.com/edit/${id}`, user)
       .then((res) => {
         toast.success("User updated successfully");
         navigate("/");

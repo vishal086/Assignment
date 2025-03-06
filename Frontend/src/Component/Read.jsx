@@ -24,7 +24,7 @@ function Read() {
 
   const handleDelete = async (id) => {
     try {
-      const res = await axios.delete(`http://localhost:8000/delete/${id}`);
+      const res = await axios.delete(`https://assignment-backend-vk8d.onrender.com/delete/${id}`);
       toast.success(res.data.message);
     
     } catch (err) {
