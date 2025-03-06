@@ -21,7 +21,7 @@ function Home() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await axios
-      .post("http://localhost:8000/create", data)
+      .post("https://assignment-backend-vk8d.onrender.com/create", data)
       .then((res) => {
         navigate("/");
         toast.success(res.data.message);

@@ -14,7 +14,7 @@ function Home() {
   });
 
   const fetchData = async() => {
-    await axios.get(`http://localhost:8000/findone/${id}`)
+    await axios.get(`https://assignment-backend-vk8d.onrender.com/findone/${id}`)
     .then((res) => {
       setUser(res.data.user);
     })

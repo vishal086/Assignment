@@ -16,7 +16,7 @@ app.use(router);
 const URL = process.env.URL
 const PORT = process.env.PORT || 4000
 mongoose
-  .connect(URL)
+  .connect(URL) 
   .then(() => {
     console.log("Connected to DB");
   })

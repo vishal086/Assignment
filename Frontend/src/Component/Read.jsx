@@ -6,11 +6,11 @@ import toast from "react-hot-toast";
 
 function Read() {
   const [data, setData] = useState([]);
-  const navigate = useNavigate();
+  const navigate = useNavigate(); 
 
-  const fetchData = async () => {
+  const fetchData = async () => { 
     try {
-      const res = await axios.get("http://localhost:8000/read");
+      const res = await axios.get("https://assignment-backend-vk8d.onrender.com/read");
       setData(res.data);
     } catch (err) {
       console.log("Error fetching data:", err);
