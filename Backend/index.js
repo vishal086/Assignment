@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(router);
 
 const URL = process.env.URL
-
+const PORT = process.env.PORT || 4000
 mongoose
   .connect(URL)
   .then(() => {
@@ -25,5 +25,5 @@ mongoose
   });
 
 app.listen(8000, () => {
-  console.log("Server is Running On PORT 4000");
+  console.log(`Server is Running On PORT ${PORT}`);
 });
